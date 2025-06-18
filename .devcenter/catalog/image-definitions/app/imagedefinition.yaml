@@ -1,0 +1,38 @@
+$schema: "1.0"
+name: "openai-cua-development-environment"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "A ready-to-code environment for the OpenAI CUA Sample App. Includes all tools, a cloned repo, and installed dependencies."
+
+tasks:
+  - name: winget
+    description: Install PowerShell Core
+    parameters:
+      package: Microsoft.PowerShell
+  - name: winget
+    description: Install Windows Terminal
+    parameters:
+      package: Microsoft.WindowsTerminal
+  - name: winget
+    description: Install Git
+    parameters:
+      package: Git.Git
+  - name: winget
+    description: Install Python 3.12
+    parameters:
+      package: Python.Python.3.12
+  - name: winget
+    description: Install Node.js
+    parameters:
+      package: OpenJS.NodeJS
+  - name: winget
+    description: Install Visual Studio Code
+    parameters:
+      package: Microsoft.VisualStudioCode
+  - name: winget
+    description: Install Docker Desktop
+    parameters:
+      package: Docker.DockerDesktop
+  - name: winget
+    description: Install Azure Developer CLI
+    parameters:
+      package: Microsoft.Azd
